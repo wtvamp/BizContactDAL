@@ -8,7 +8,7 @@ namespace BizContacts.DAL
     /// </summary>
     public class BizContactIdentityContext : DbContext
     {
-        public BizContactIdentityContext(DbContextOptions<BizContactContext> options)
+        public BizContactIdentityContext(DbContextOptions<BizContactIdentityContext> options)
             : base(options)
         { }
 
