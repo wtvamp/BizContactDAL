@@ -6,7 +6,7 @@ namespace BizContacts.DAL
     /// <summary>
     /// Context for working with ASP.Net Identities
     /// </summary>
-    class BizContactIdentityContext : DbContext
+    public class BizContactIdentityContext : DbContext
     {
         public BizContactIdentityContext(DbContextOptions<BizContactContext> options)
             : base(options)
