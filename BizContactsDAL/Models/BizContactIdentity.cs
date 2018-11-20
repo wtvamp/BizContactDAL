@@ -3,7 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BizContacts.DAL
 {
-    class BizContactIdentityContext: DbContext
+    /// <summary>
+    /// Context for working with ASP.Net Identities
+    /// </summary>
+    class BizContactIdentityContext : DbContext
     {
         public BizContactIdentityContext(DbContextOptions<BizContactContext> options)
             : base(options)
@@ -12,6 +15,9 @@ namespace BizContacts.DAL
         public DbSet<BizContactIdentity> BizContactIdentities { get; set; }
     }
 
+    /// <summary>
+    /// A user stored using ASP.NET Identity
+    /// </summary>
     public class BizContactIdentity: IdentityUser
     {
         // Extended Properties
